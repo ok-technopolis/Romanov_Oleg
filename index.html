@@ -3,40 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Todos</title>
+    <link rel="stylesheet" type="text/css" href="./todos.css">
 </head>
 <body>
-<div class="todos-header" itemprop="about" role="banner">
+<div class="todos-header">
     <h1 class="todos-title">todos</h1>
 </div>
-
 <div class="todos-add">
     <button class="todo-add_select-all" aria-label="Отметить все как выполненные"></button>
     <input class="todo-add_input" placeholder="What needs to be done?" aria-label="Поле добавления todo"/>
 </div>
 <div class="todos-list">
     <div class="todo-item">
-        <textarea class="todo-item_text">HTML</textarea>
-        <input type="checkbox"
-               class=“todo-item” aria-label="Пометить как выполненное"/>
+        <!--Заменил input на div, так как придется городить еще и label для вставки изображения. В google keep используются div'ы для имитации checkbox. Совершенно не уверен на счет правильности решения.-->
+        <div class="todo-item_unready-mark" aria-label="Пометить как выполненное"></div>
         <button class="todo-item_remove" aria-label="Удалить todo"></button>
+        <textarea class="todo-item_text">HTML</textarea>
     </div>
     <div class="todo-item __ready">
+        <div class="todo-item_ready-mark" aria-label="Пометить как невыполненное"></div>
+        <button class="todo-item_remove" aria-label="Удалить todo"></button>
         <textarea class="todo-item_text">CSS</textarea>
-        <input type="checkbox" checked="checked"
-               class=“todo-item_ready-mark” aria-label="Пометить как невыполненное"/>
-        <button class="todo-item_remove" aria-label="Удалить todo"></button>
     </div>
     <div class="todo-item">
+        <div class="todo-item_unready-mark" aria-label="Пометить как выполненное"></div>
+        <button class="todo-item_remove" aria-label="Удалить todo"></button>
         <textarea class="todo-item_text">JS</textarea>
-        <input type="checkbox"
-               class=“todo-item” aria-label="Пометить как выполненное"/>
-        <button class="todo-item_remove" aria-label="Удалить todo"></button>
     </div>
     <div class="todo-item">
-        <textarea class="todo-item_text">JS tools</textarea>
-        <input type="checkbox"
-               class=“todo-item” aria-label="Пометить как выполненное"/>
+        <div class="todo-item_unready-mark" aria-label="Пометить как выполненное"></div>
         <button class="todo-item_remove" aria-label="Удалить todo"></button>
+        <textarea class="todo-item_text">JS tools</textarea>
     </div>
 </div>
 <div class="todos-actions-bar">
@@ -52,7 +49,7 @@
                 aria-label="Фильтр: показать невыполненные">
             Active
         </button>
-        <button class="todos-filter __active" data-filter="completed"
+        <button class="todos-filter" data-filter="completed"
                 aria-label="Фильтр: показать выполненные">
             Completed
         </button>
@@ -61,6 +58,9 @@
         Clear completed
     </button>
 </div>
+<div class="todos-bottom-cards">
+    <div class="todos-bottom-cards_first"></div>
+    <div class="todos-bottom-cards_second"></div>
 </div>
 </body>
 </html>
