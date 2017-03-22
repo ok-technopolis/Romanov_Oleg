@@ -1,3 +1,8 @@
+@font-face {
+    font-family: HelveticaNeue-Light;
+    src: url("./font-styles/HelveticaNeue-Light.otf");
+}
+
 body {
     background-color: #f5f5f5;
     text-color: #666666;
@@ -6,16 +11,17 @@ body {
 /*Header*/
 .todos-header {
     text-align: center;
-    margin-bottom: -50px;
+    margin-bottom: -60px;
     vertical-align: bottom;
 }
 
 .todos-title {
     display: inline-block;
-    font-size: 50pt;
+    font-size: 60pt;
     color: #5b3e3e;
     text-transform: lowercase;
     font-weight: 100;
+    font-family: HelveticaNeue-Light, serif;
 }
 
 .todo-add_select-all {
