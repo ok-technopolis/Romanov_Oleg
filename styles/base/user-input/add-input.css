@@ -1,0 +1,11 @@
+.todo-add_input {
+    border: none;
+    background: #ffffff !important; /* желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым */
+    outline: none;
+    height: 24px;
+    width: 546px;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 100;
+    color: #666666;
+}

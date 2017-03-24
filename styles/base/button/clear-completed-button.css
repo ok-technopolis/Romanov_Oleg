@@ -1,0 +1,8 @@
+.todos-actions-bar_clear-completed {
+    color: #666666;
+    border: none;
+    background-color: white;
+    float: right;
+    outline: none;
+    cursor: pointer;
+}

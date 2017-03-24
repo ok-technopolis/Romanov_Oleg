@@ -1,0 +1,13 @@
+.todos-filter,
+.todos-actions-bar_clear-completed {
+    border: none;
+    background-color: white;
+    color: #666666;
+    outline: none;
+    cursor: pointer;
+}
+
+.__active {
+    border: 1px solid #e6e6e6;
+}
+

@@ -1,0 +1,16 @@
+.todo-item_remove {
+    background: inherit;
+    width: 18px;
+    height: 18px;
+    border: none;
+    float: right;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    bottom: -10px;
+}
+
+.todo-item:hover .todo-item_remove {
+    display: block;
+    background: url("../../../images/close.png") no-repeat;
+}

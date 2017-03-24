@@ -1,0 +1,20 @@
+.todo-item_text {
+    display: block;
+    width: 525px;
+    border: none;
+    resize: none;
+    color: #666666;
+    outline: none;
+    float: right;
+    font-size: 22px;
+    min-height: 30px;
+    background-color: inherit;
+    padding-right: 15px;
+    position: relative;
+    top: 6px;
+}
+
+.__ready .todo-item_text {
+    text-decoration: line-through;
+    color: #cfcfcf;
+}

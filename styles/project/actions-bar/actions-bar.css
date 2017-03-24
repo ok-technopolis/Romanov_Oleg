@@ -1,0 +1,18 @@
+.todos-actions-bar {
+    border: 1px solid #e6e6e6;
+    padding: 15px 15px;
+    margin: 0 auto -1px;
+    width: 600px;
+    background-color: white;
+    height: 15px;
+    color: #666666;
+}
+
+.todos-actions-bar_counter {
+    float: left;
+}
+
+.todos-filters {
+    float: left;
+    margin-left: 130px;
+}

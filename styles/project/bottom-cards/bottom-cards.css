@@ -1,0 +1,18 @@
+.todos-bottom-cards {
+}
+
+.todos-bottom-cards_first {
+    width: 626px;
+    height: 3px;
+    border: 1px solid #e6e6e6;
+    background-color: white;
+    margin: 0 auto -1px;
+}
+
+.todos-bottom-cards_second {
+    width: 624px;
+    height: 3px;
+    border: 1px solid #e6e6e6;
+    background-color: white;
+    margin: 0 auto;
+}

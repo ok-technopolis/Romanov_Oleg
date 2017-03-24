@@ -1,0 +1,9 @@
+.todo-item {
+    overflow: hidden;
+    padding: 10px 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.todo-item:hover {
+    background-color: #fafafa;
+}

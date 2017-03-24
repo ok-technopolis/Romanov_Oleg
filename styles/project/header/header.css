@@ -1,0 +1,14 @@
+.todos-header {
+    text-align: center;
+    margin-bottom: -60px;
+    vertical-align: bottom;
+}
+
+.todos-title {
+    display: inline-block;
+    font-size: 60pt;
+    color: #5b3e3e;
+    text-transform: lowercase;
+    font-weight: 100;
+    font-family: HelveticaNeue-Light, serif;
+}

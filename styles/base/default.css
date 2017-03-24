@@ -1,0 +1,9 @@
+@font-face {
+    font-family: HelveticaNeue-Light;
+    src: url("../../fonts/HelveticaNeue-Light.otf");
+}
+
+body {
+    background-color: #f5f5f5;
+    text-color: #666666;
+}
