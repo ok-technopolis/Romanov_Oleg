@@ -1,6 +1,6 @@
 .todo-item_text {
     display: block;
-    width: 525px;
+    width: 87%;
     border: none;
     resize: none;
     color: #666666;
@@ -9,12 +9,15 @@
     font-size: 22px;
     min-height: 30px;
     background-color: inherit;
-    padding-right: 15px;
-    position: relative;
     top: 6px;
+    word-wrap: break-word;
+    align-self: center;
+    margin: 10px 40px 10px 10px;
+    word-break: break-all;
+    flex: 1 0;
 }
 
-.__ready .todo-item_text {
+.todo-item.__ready  .todo-item_text {
     text-decoration: line-through;
     color: #cfcfcf;
 }

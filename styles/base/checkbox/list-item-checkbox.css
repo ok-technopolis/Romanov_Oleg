@@ -1,0 +1,42 @@
+.todo-item_input-checkbox {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    align-self: center;
+    margin-left: 5px;
+}
+
+.item-input-checkbox_target {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.item-input-checkbox_visual {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+    border: 1px solid #e6e6e6;
+}
+
+/*TODO: ховеры*/
+.item-input-checkbox_target:hover ~ .input-checkbox_visual {
+}
+
+.item-input-checkbox_target:checked ~ .item-input-checkbox_visual {
+    border-radius: 50%;
+    border: 1px solid #5dc2af;
+    background: url('../../../images/svg/completed.svg') no-repeat center;
+}
+
+.item-input-checkbox_target:hover:checked ~ .input-checkbox_visual {
+}

@@ -1,7 +1,9 @@
 .todos-list {
     border: 1px solid #e6e6e6;
-    width: 630px;
+    width: 60%;
     background-color: white;
     margin: 0 auto -2px;
     min-height: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
 }

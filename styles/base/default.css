@@ -1,5 +1,9 @@
 body {
     background-color: #f5f5f5;
-    text-color: #666666;
-    font-family: Arial, serif;
+    font-family: 'Helvetica Neue', Arial, serif;
+}
+
+/*Это переопределит стили user agent stylesheet*/
+input[type=checkbox] {
+    margin: 0 0 0 0;
 }
