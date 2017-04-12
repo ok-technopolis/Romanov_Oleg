@@ -30,6 +30,8 @@
 }
 
 .add-input-checkbox_target:checked ~ .add-input-checkbox_visual {
+    background: url("../../../images/svg/selected-all.svg");
+    transition: background ease-out .5s;
 }
 
 .add-input-checkbox_target:hover:checked ~ .add-input-checkbox_visual {
