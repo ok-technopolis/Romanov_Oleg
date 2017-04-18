@@ -3,7 +3,7 @@
     width: 35px;
     height: 35px;
     align-self: center;
-    margin-left: 5px;
+    margin-left: 8px;
 }
 
 .item-input-checkbox_target {
@@ -51,7 +51,7 @@
     background: url('../../../images/svg/t2.svg') no-repeat left center;
 
     transform: rotate(37deg);
-    transition: transform .8s;
+    transition: transform .3s;
 
     margin-top: 7.4px;
     margin-left: 6px;
@@ -67,7 +67,7 @@
     background: url('../../../images/svg/t1.svg') no-repeat right center;
 
     transform: rotate(-35deg);
-    transition: transform .8s;
+    transition: transform .3s;
 
     margin-top: 6.7px;
     margin-left: 8px;
