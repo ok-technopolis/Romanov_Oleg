@@ -1,5 +1,7 @@
+@import "../../config/vars/colors";
+
 .todos-actions-bar_clear-completed {
-    color: #666666;
+    color: $c-text;
     border: none;
     background-color: white;
     float: right;

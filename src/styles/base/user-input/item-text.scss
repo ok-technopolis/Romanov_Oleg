@@ -1,9 +1,11 @@
+@import "../../config/vars/colors";
+
 .todo-item_text {
     display: block;
     width: 87%;
     border: none;
     resize: none;
-    color: #666666;
+    color: $c-text;
     outline: none;
     float: right;
     font-size: 22px;
@@ -19,5 +21,5 @@
 
 .todo-item.__ready  .todo-item_text {
     text-decoration: line-through;
-    color: #cfcfcf;
+    color: $c-completed-text;
 }

@@ -1,9 +1,10 @@
+@import "../../config/vars/colors";
+
+
 .todos-list {
-    border: 1px solid #e6e6e6;
-    width: 60%;
-    background-color: white;
+    border: 1px solid $c-default-border;
+    width: 100%;
+    background-color: $c-main-content-bg;
     margin: 0 auto -2px;
     min-height: 300px;
-    padding-left: 15px;
-    padding-right: 15px;
 }

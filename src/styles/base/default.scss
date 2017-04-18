@@ -1,9 +1,18 @@
+@import "../config/vars/colors";
+
 body {
-    background-color: #f5f5f5;
+    background-color: $c-main-background;
     font-family: 'Helvetica Neue', Arial, serif;
 }
 
 /*Это переопределит стили user agent stylesheet*/
 input[type=checkbox] {
     margin: 0 0 0 0;
+}
+
+h1 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
 }

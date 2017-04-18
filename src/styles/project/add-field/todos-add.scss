@@ -1,8 +1,12 @@
+@import "../../config/vars/colors";
+
+
 .todos-add {
-    border: 1px solid #e6e6e6;
-    width: 60%;
-    padding: 10px 15px;
-    background-color: white;
+    border: 1px solid $c-default-border;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $c-main-content-bg;
     margin: 0 auto -1px;
     display: flex;
 }

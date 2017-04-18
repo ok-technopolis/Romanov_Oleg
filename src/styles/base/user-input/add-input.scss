@@ -1,13 +1,15 @@
+@import "../../config/vars/colors";
+
 .todo-add_input {
     border: none;
-    background: #ffffff !important; /* желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым */
+    background: $c-main-content-bg !important; /* желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым */
     outline: none;
     height: 30px;
     width: 100%;
     font-size: 22px;
     font-style: italic;
     font-weight: 100;
-    color: #666666;
+    color: $c-text;
     align-self: center;
     margin-left: 15px;
 }

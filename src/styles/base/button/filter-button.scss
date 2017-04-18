@@ -1,14 +1,20 @@
+@import "../../config/vars/colors";
+
 .todos-filter,
 .todos-actions-bar_clear-completed {
     border: none;
-    background-color: white;
-    color: #666666;
+    background-color: $c-filters-background;
+    color: $c-text;
     outline: none;
     cursor: pointer;
 }
 
+.todos-actions-bar_clear-completed {
+    margin-right: 15px;
+}
+
 .todos-filters .todos-filter.__active {
-    border: 1px solid #e6e6e6;
+    border: 1px solid $c-default-border;
     border-radius: 5%;
 }
 

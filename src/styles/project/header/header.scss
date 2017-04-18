@@ -1,13 +1,13 @@
+@import "../../config/vars/colors";
+
 .todos-header {
     text-align: center;
-    margin-bottom: -60px;
-    vertical-align: bottom;
 }
 
 .todos-title {
     display: inline-block;
-    font-size: 60pt;
-    color: #4f3535;
+    color: $c-header-text;
     text-transform: lowercase;
     font-weight: 100;
+    font-size: 100px;
 }
