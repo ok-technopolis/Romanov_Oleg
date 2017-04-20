@@ -1,3 +1,5 @@
+@import "../../config/globals";
+
 .todo-item_remove {
     background: inherit;
     width: 18px;
@@ -7,8 +9,8 @@
     outline: none;
     cursor: pointer;
     position: absolute;
-    bottom: 15px;
-    right: 15px;
+    bottom: $offset-main-content;
+    right: $offset-main-content;
     z-index: 1;
     align-self: flex-end;
 }

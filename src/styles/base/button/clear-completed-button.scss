@@ -1,9 +1,9 @@
-@import "../../config/vars/colors";
+@import "../../config/globals";
 
 .todos-actions-bar_clear-completed {
     color: $c-text;
     border: none;
-    background-color: white;
+    background-color: $c-main-content-bg;
     float: right;
     outline: none;
     cursor: pointer;

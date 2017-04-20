@@ -1,4 +1,4 @@
-@import "../../config/vars/colors";
+@import "../../config/globals";
 
 .todos-filter,
 .todos-actions-bar_clear-completed {
@@ -10,7 +10,7 @@
 }
 
 .todos-actions-bar_clear-completed {
-    margin-right: 15px;
+    margin-right: $offset-main-content;
 }
 
 .todos-filters .todos-filter.__active {

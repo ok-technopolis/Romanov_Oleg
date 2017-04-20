@@ -1,4 +1,5 @@
 @import "../../config/vars/colors";
+@import "../../config/vars/fonts";
 
 .todos-header {
     text-align: center;
@@ -8,6 +9,6 @@
     display: inline-block;
     color: $c-header-text;
     text-transform: lowercase;
-    font-weight: 100;
-    font-size: 100px;
+    font-weight: $font-weight-header;
+    font-size: $font-size-header;
 }

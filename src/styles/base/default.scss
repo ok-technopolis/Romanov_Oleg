@@ -1,8 +1,8 @@
-@import "../config/vars/colors";
+@import "../config/globals";
 
 body {
     background-color: $c-main-background;
-    font-family: 'Helvetica Neue', Arial, serif;
+    font-family: $font-main;
 }
 
 /*Это переопределит стили user agent stylesheet*/

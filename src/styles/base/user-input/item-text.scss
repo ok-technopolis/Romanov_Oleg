@@ -1,25 +1,22 @@
-@import "../../config/vars/colors";
+@import "../../config/globals";
 
 .todo-item_text {
-    display: block;
-    width: 87%;
     border: none;
     resize: none;
     color: $c-text;
     outline: none;
-    float: right;
-    font-size: 22px;
-    min-height: 30px;
+    font-size: $font-size-text;
+    min-height: $text-content-height;
     background-color: inherit;
-    top: 6px;
     word-wrap: break-word;
     align-self: center;
     margin: 10px 40px 10px 10px;
+    padding-top: 10px;
     word-break: break-all;
     flex: 1 0;
 }
 
-.todo-item.__ready  .todo-item_text {
+.todo-item.__ready .todo-item_text {
     text-decoration: line-through;
     color: $c-completed-text;
 }

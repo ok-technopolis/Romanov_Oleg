@@ -1,4 +1,4 @@
-@import "../../config/vars/colors";
+@import "../../config/globals";
 
 .todo-item_input-checkbox {
     position: relative;
@@ -26,8 +26,9 @@
     width: 100%;
     height: 100%;
 
-    border-radius: 50%;
-    border: 1px solid $c-default-border;
+    @include border-radius(50%, 1px, $c-default-border);
+    //border-radius: 50%;
+    //border: 1px solid $c-default-border;
 }
 
 /*TODO: ховеры*/
