@@ -11,16 +11,19 @@
     <h1 class="todos-title">todos</h1>
 </div>
 <div class="wrapper">
+
     <div class="todos-add">
-        <div class="todo-add_input-checkbox">
-            <input type="checkbox"
-                   class="add-input-checkbox_target"
-                   aria-label="Отметить все как выполненные"/>
-            <div class="add-input-checkbox_visual"></div>
+        <div class="action todo-add_select-all-action">
+            <div class="action_visual"></div>
+            <button class="action_target" aria-label="Отметить все как выполненные"></button>
         </div>
 
-        <input class="todo-add_input" placeholder="What needs to be done?" aria-label="Поле добавления todo"/>
+        <div class="todo-add_input_w">
+            <input class="todo-add_input" placeholder="What needs to be done?"
+                   aria-label="Поле добавления todo"/>
+        </div>
     </div>
+
     <div class="todos-list">
         <div class="todo-item">
             <div class="todo-item_input-checkbox">
