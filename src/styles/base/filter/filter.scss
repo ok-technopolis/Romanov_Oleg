@@ -1,0 +1,14 @@
+@import "../../config/vars/colors";
+
+.filter {
+    border: none;
+    background-color: $c-filters-background;
+    color: $c-text;
+    outline: none;
+    cursor: pointer;
+}
+
+.filter.__active {
+    border: 1px solid $c-default-border;
+    border-radius: 5%;
+}

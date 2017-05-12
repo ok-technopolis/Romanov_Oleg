@@ -10,7 +10,7 @@
 <div class="todos-header">
     <h1 class="todos-title">todos</h1>
 </div>
-<div class="wrapper">
+<div class="todos-wrapper">
 
     <div class="todos-add">
         <div class="action todo-add_select-all-action">
@@ -24,7 +24,7 @@
         </div>
     </div>
 
-    <div class="todos-list">
+    <div class="todo-list">
         <div class="todo-item">
             <div class="todo-item_input-checkbox">
                 <input type="checkbox"
@@ -87,23 +87,25 @@
         <div class="todos-actions-bar_counter"
              aria-label="Количество не сделанных todo">3 items left
         </div>
+
+        <button class="todos-actions-bar_clear-completed">
+            Clear completed
+        </button>
+
         <div class="todos-filters">
-            <button class="todos-filter __active" data-filter="all"
+            <button class="filter __active" data-filter="all"
                     aria-label="Фильтр: показать все">
                 All
             </button>
-            <button class="todos-filter" data-filter="active"
+            <button class="filter" data-filter="active"
                     aria-label="Фильтр: показать невыполненные">
                 Active
             </button>
-            <button class="todos-filter" data-filter="completed"
+            <button class="filter" data-filter="completed"
                     aria-label="Фильтр: показать выполненные">
                 Completed
             </button>
         </div>
-        <button class="todos-actions-bar_clear-completed">
-            Clear completed
-        </button>
     </div>
     <div class="todos-bottom-cards">
         <div class="todos-bottom-cards_first"></div>

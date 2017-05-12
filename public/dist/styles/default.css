@@ -1,34 +1,5 @@
 @charset "UTF-8";
 
-.todos-actions-bar_clear-completed {
-  color: #666;
-  border: none;
-  background-color: #fff;
-  float: right;
-  outline: none;
-  cursor: pointer;
-  order: 3;
-  max-width: 33%;
-}
-
-.todos-filter,
-.todos-actions-bar_clear-completed {
-  border: none;
-  background-color: #fff;
-  color: #666;
-  outline: none;
-  cursor: pointer;
-}
-
-.todos-actions-bar_clear-completed {
-  margin-right: 15px;
-}
-
-.todos-filters .todos-filter.__active {
-  border: 1px solid #e6e6e6;
-  border-radius: 5%;
-}
-
 .todo-item_remove {
   background: inherit;
   width: 18px;
@@ -47,41 +18,6 @@
 .todo-item:hover .todo-item_remove {
   display: block;
   background-image: url("../images/svg/close.svg");
-}
-
-.todo-add_input-checkbox {
-  position: relative;
-  min-width: 24px;
-  height: 12px;
-  align-self: center;
-  margin-left: 15px;
-}
-
-.add-input-checkbox_target {
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.add-input-checkbox_visual {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../images/svg/select-all.svg");
-}
-
-/*TODO: ховеры*/
-
-.add-input-checkbox_target:checked ~ .add-input-checkbox_visual {
-  background: url("../images/svg/selected-all.svg");
-  transition: background ease-out .5s;
 }
 
 .todo-item_input-checkbox {
@@ -188,89 +124,6 @@ h1 {
   -webkit-margin-end: 0;
 }
 
-.wrapper {
-  max-width: 600px;
-  margin: 0 auto;
-  border: 1px solid #e6e6e6;
-}
-
-.todos-actions-bar {
-  border: 1px solid #e6e6e6;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin: 0 auto -1px;
-  background-color: #fff;
-  min-height: 15px;
-  color: #666;
-  display: flex;
-  word-break: break-all;
-}
-
-.todos-actions-bar_counter {
-  max-width: 33%;
-  float: left;
-  order: 1;
-  margin-left: 15px;
-}
-
-.todos-filters {
-  max-width: 33%;
-  order: 3;
-  margin: 0 auto;
-}
-
-.todos-bottom-cards {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.todos-bottom-cards_first {
-  height: 5px;
-  border: 1px solid #e6e6e6;
-  background-color: #fff;
-  margin-left: 1px;
-  margin-right: 1px;
-}
-
-.todos-bottom-cards_second {
-  height: 4px;
-  border: 1px solid #e6e6e6;
-  background-color: #fff;
-  margin-top: -1px;
-  margin-left: 2px;
-  margin-right: 2px;
-}
-
-.todos-header {
-  text-align: center;
-}
-
-.todos-title {
-  display: inline-block;
-  color: rgba(175, 47, 47, 0.15);
-  text-transform: lowercase;
-  font-weight: 100;
-  font-size: 100px;
-}
-
-.todo-item {
-  overflow: hidden;
-  border-bottom: 1px solid #e6e6e6;
-  position: relative;
-  display: flex;
-}
-
-.todo-item:hover {
-  background-color: #fafafa;
-}
-
-.todos-list {
-  border: 1px solid #e6e6e6;
-  background-color: #fff;
-  margin: 0 auto -2px;
-  min-height: 300px;
-}
-
 .action {
   position: relative;
   display: inline-block;
@@ -285,6 +138,19 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.filter {
+  border: none;
+  background-color: #fff;
+  color: #666;
+  outline: none;
+  cursor: pointer;
+}
+
+.filter.__active {
+  border: 1px solid #e6e6e6;
+  border-radius: 5%;
 }
 
 .todos-add {
@@ -346,8 +212,7 @@ h1 {
 .todo-add_input {
   height: 64px;
   border: none;
-  background: #fff !important;
-  /* желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым */
+  background: #fff;
   outline: none;
   width: 100%;
   font-size: 22px;
@@ -358,5 +223,94 @@ h1 {
   padding: 16px;
   box-sizing: border-box;
   /* Свойства width и height включают в себя значения полей и границ, но не отступов (margin) */
+}
+
+.todo-list {
+  background-color: #fff;
+  margin: 0 auto -2px;
+  min-height: 300px;
+}
+
+.todo-item {
+  overflow: hidden;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+  display: flex;
+}
+
+.todo-item:hover {
+  background-color: #fafafa;
+}
+
+.todos-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.todos-header {
+  text-align: center;
+}
+
+.todos-title {
+  display: inline-block;
+  color: rgba(175, 47, 47, 0.15);
+  text-transform: lowercase;
+  font-weight: 100;
+  font-size: 100px;
+}
+
+.todos-bottom-cards {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.todos-bottom-cards_first {
+  height: 5px;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.todos-bottom-cards_second {
+  height: 4px;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  margin-top: -1px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.todos-actions-bar {
+  border: 1px solid #e6e6e6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0 auto -1px;
+  background-color: #fff;
+  min-height: 15px;
+  color: #666;
+  word-break: break-all;
+}
+
+.todos-actions-bar_counter {
+  max-width: 33%;
+  float: left;
+  margin-left: 15px;
+}
+
+.todos-filters {
+  max-width: 33%;
+  margin: 0 auto;
+}
+
+.todos-actions-bar_clear-completed {
+  border: none;
+  color: #666;
+  outline: none;
+  cursor: pointer;
+  margin-right: 15px;
+  float: right;
+  background-color: #fff;
+  max-width: 33%;
 }
 /*# sourceMappingURL=default.css.map */

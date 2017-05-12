@@ -1,8 +1,9 @@
 @import "../../config/vars/colors";
 
 
-.todos-list {
-    border: 1px solid $c-default-border;
+.todo-list {
+    //border: 1px solid $c-default-border;
+
     background-color: $c-main-content-bg;
     margin: 0 auto -2px;
     min-height: 300px;

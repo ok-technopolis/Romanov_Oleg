@@ -1,0 +1,14 @@
+@import "../../config/vars/colors";
+@import "../../config/vars/fonts";
+
+.todos-header {
+    text-align: center;
+}
+
+    .todos-title {
+        display: inline-block;
+        color: $c-header-text;
+        text-transform: lowercase;
+        font-weight: $font-weight-header;
+        font-size: $font-size-header;
+    }
