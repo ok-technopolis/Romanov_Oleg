@@ -1,11 +1,7 @@
-@import "base/button/remove-button";
-@import "base/checkbox/list-item-checkbox";
-@import "base/user-input/item-text";
-@import "base/default";
-
-
 @import "base/action/action";
 @import "base/filter/filter";
+@import "base/input-checkbox/input-checkbox";
+
 @import "project/todos-add/todos-add";
 @import "project/todo-list/todo-list";
 @import "project/todo-list/todo-item";
@@ -13,3 +9,5 @@
 @import "project/todos-header/header";
 @import "project/todos-bottom-cards/todos-bottom-cards";
 @import "project/todos-actions-bar/todos-actions-bar";
+
+@import "project/layout";

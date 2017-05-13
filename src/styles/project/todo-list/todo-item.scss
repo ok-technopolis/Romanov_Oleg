@@ -1,13 +1,67 @@
-@import "../../config/vars/colors";
+@import "../../config/globals";
 
 
 .todo-item {
     overflow: hidden;
-    border-bottom: 1px solid $c-default-border;
+    border-top: 1px solid $c-default-border;
     position: relative;
     display: flex;
+    padding: $offset_3x;
 }
 
-.todo-item:hover {
-    background-color: $c-item-hover-bg;
-}
+    .todo-item:hover {
+        background-color: $c-item-hover-bg;
+    }
+
+    .todo-item_text-w {
+        overflow: hidden;
+        width: 100%;
+        padding-left: $offset_2x;
+        padding-right: $offset_2x;
+        margin: 0 40px 0 10px;
+        padding-top: 10px;
+    }
+
+        .todo-item_text {
+            width: 100%;
+            overflow: hidden;
+            border: none;
+            resize: none;
+            color: $c-text;
+            outline: none;
+            font-size: $font-size-text;
+            min-height: $text-content-height;
+            background-color: inherit;
+            word-wrap: break-word;
+            align-self: center;
+            word-break: break-all;
+            flex: 1 0;
+        }
+
+            .todo-item.__ready .todo-item_text {
+                text-decoration: line-through;
+                color: $c-completed-text;
+            }
+
+
+    .todo-item_ready-checker {
+        align-self: center;
+    }
+
+    .todo-item_remove-action {
+        margin-top: $offset_3x;
+        margin-bottom: $offset_3x;
+        order: 1;
+        align-self: flex-end;
+    }
+
+        .todo-item_remove-action .action_visual {
+            width: 18px;
+            height: 18px;
+            position: relative;
+            overflow: hidden;
+        }
+
+                .todo-item:hover .todo-item_remove-action .action_visual {
+                    background: url('../../../images/svg/close.svg') no-repeat center;
+                }

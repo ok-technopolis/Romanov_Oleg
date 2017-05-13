@@ -1,0 +1,43 @@
+@import "../../config/globals";
+
+$checkbox-size: 36px;
+$c-checkbox-active: #5dc2af;
+
+.input-checkbox {
+    position: relative;
+    width: $checkbox-size;
+    min-width: $checkbox-size;
+    height: $checkbox-size;
+}
+
+    .input-checkbox_target {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .input-checkbox_visual {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        @include border-radius(50%, 1px, $c-default-border);
+    }
+
+        .input-checkbox_target:hover ~ .input-checkbox_visual {
+        }
+
+        .input-checkbox_target:checked ~ .input-checkbox_visual {
+            border: 1px solid $c-checkbox-active;
+            background: url('../../../images/svg/completed.svg') no-repeat center;
+        }
+
+        .input-checkbox_target:hover:checked ~ .input-checkbox_visual {
+        }

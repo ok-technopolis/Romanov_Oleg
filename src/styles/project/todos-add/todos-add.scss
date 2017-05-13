@@ -4,6 +4,8 @@ $todos-add-height: 64px;
 
 .todos-add {
     height: $todos-add-height;
+    border: 1px solid $c-default-border;
+    margin-bottom: -2px;
     background: #fff;
     @include clearfix;
 }
