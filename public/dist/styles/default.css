@@ -68,18 +68,8 @@
 .todos-add {
   height: 64px;
   border: 1px solid #e6e6e6;
-  margin-bottom: -2px;
+  margin-bottom: -1px;
   background: #fff;
-}
-
-.todos-add:before,
-.todos-add:after {
-  content: '';
-  display: table;
-}
-
-.todos-add:after {
-  clear: both;
 }
 
 .todo-add_select-all-action {
@@ -148,7 +138,6 @@
 .todo-item {
   overflow: hidden;
   border-top: 1px solid #e6e6e6;
-  position: relative;
   display: flex;
   padding: 12px;
 }
@@ -162,7 +151,7 @@
   width: 100%;
   padding-left: 8px;
   padding-right: 8px;
-  margin: 0 40px 0 10px;
+  margin: 0 10px 0 10px;
   padding-top: 10px;
 }
 
@@ -201,7 +190,6 @@
 .todo-item_remove-action .action_visual {
   width: 18px;
   height: 18px;
-  position: relative;
   overflow: hidden;
 }
 

@@ -4,7 +4,7 @@
 .todo-item {
     overflow: hidden;
     border-top: 1px solid $c-default-border;
-    position: relative;
+    //position: relative;
     display: flex;
     padding: $offset_3x;
 }
@@ -18,7 +18,7 @@
         width: 100%;
         padding-left: $offset_2x;
         padding-right: $offset_2x;
-        margin: 0 40px 0 10px;
+        margin: 0 10px 0 10px;
         padding-top: 10px;
     }
 
@@ -58,7 +58,7 @@
         .todo-item_remove-action .action_visual {
             width: 18px;
             height: 18px;
-            position: relative;
+            //position: relative;
             overflow: hidden;
         }
 
