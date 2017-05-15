@@ -148,15 +148,13 @@
 
 .todo-item_text-w {
   overflow: hidden;
-  width: 100%;
   padding-left: 8px;
   padding-right: 8px;
-  margin: 0 10px 0 10px;
+  margin: 0 2px 0 2px;
   padding-top: 10px;
 }
 
 .todo-item_text {
-  width: 100%;
   overflow: hidden;
   border: none;
   resize: none;
@@ -178,12 +176,14 @@
 
 .todo-item_ready-checker {
   align-self: center;
+  float: left;
 }
 
 .todo-item_remove-action {
   margin-top: 12px;
   margin-bottom: 12px;
   order: 1;
+  float: right;
   align-self: flex-end;
 }
 
@@ -249,28 +249,27 @@
   min-height: 15px;
   color: #666;
   word-break: break-all;
+  text-align: center;
 }
 
 .todos-actions-bar_counter {
-  max-width: 33%;
   float: left;
   margin-left: 15px;
 }
 
 .todos-filters {
-  max-width: 33%;
   margin: 0 auto;
+  display: inline-block;
 }
 
 .todos-actions-bar_clear-completed {
-  border: none;
   color: #666;
+  border: none;
   outline: none;
   cursor: pointer;
   margin-right: 15px;
   float: right;
   background-color: #fff;
-  max-width: 33%;
 }
 
 body {

@@ -10,29 +10,28 @@
     min-height: $offset-main-content;
     color: $c-text;
     word-break: break-all;
+    text-align: center;
 }
 
     .todos-actions-bar_counter {
-        max-width: 33%;
         float: left;
         margin-left: $offset-main-content;
     }
 
     .todos-filters {
-        max-width: 33%;
         margin: 0 auto;
+        display: inline-block;
     }
 
 
     .todos-actions-bar_clear-completed {
-        border: none;
         color: $c-text;
+        border: none;
         outline: none;
         cursor: pointer;
         margin-right: $offset-main-content;
         float: right;
         background-color: $c-main-content-bg;
-        max-width: 33%;
     }
 
 

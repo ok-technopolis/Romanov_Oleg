@@ -4,7 +4,6 @@
 .todo-item {
     overflow: hidden;
     border-top: 1px solid $c-default-border;
-    //position: relative;
     display: flex;
     padding: $offset_3x;
 }
@@ -15,15 +14,14 @@
 
     .todo-item_text-w {
         overflow: hidden;
-        width: 100%;
+        //width: 100%;
         padding-left: $offset_2x;
         padding-right: $offset_2x;
-        margin: 0 10px 0 10px;
+        margin: 0 2px 0 2px;
         padding-top: 10px;
     }
 
         .todo-item_text {
-            width: 100%;
             overflow: hidden;
             border: none;
             resize: none;
@@ -46,12 +44,14 @@
 
     .todo-item_ready-checker {
         align-self: center;
+        float: left;
     }
 
     .todo-item_remove-action {
         margin-top: $offset_3x;
         margin-bottom: $offset_3x;
         order: 1;
+        float: right;
         align-self: flex-end;
     }
 
