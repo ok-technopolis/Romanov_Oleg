@@ -1,0 +1,15 @@
+@import "../../config/globals";
+
+.filter {
+    border: 0;
+    background-color: $c-filters-background;
+    color: $c-text;
+    outline: none;
+    cursor: pointer;
+    padding: $offset_half $offset_2x;
+}
+
+.filter.__active {
+    border: 1px solid $c-default-border;
+    border-radius: 5%;
+}

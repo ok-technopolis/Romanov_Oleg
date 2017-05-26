@@ -1,0 +1,15 @@
+.action {
+    position: relative;
+    display: inline-block;
+}
+
+    .action_target {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }

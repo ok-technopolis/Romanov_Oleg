@@ -1,0 +1,37 @@
+@import "../../config/vars/colors";
+@import "../../config/vars/offsets";
+
+.todos-actions-bar {
+    border: 1px solid $c-default-border;
+    padding-top: $offset-main-content;
+    padding-bottom: $offset-main-content;
+    margin: 0 auto -1px;
+    background-color: $c-filters-background;
+    min-height: $offset-main-content;
+    color: $c-text;
+    word-break: break-all;
+    text-align: center;
+}
+
+    .todos-actions-bar_counter {
+        float: left;
+        margin-left: $offset-main-content;
+    }
+
+    .todos-filters {
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+
+    .todos-actions-bar_clear-completed {
+        color: $c-text;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-right: $offset-main-content;
+        float: right;
+        background-color: $c-main-content-bg;
+    }
+
+

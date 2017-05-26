@@ -1,0 +1,25 @@
+@import "../../config/vars/colors";
+@import "../../config/vars/offsets";
+@import "../../config/vars/layout";
+
+.todos-bottom-cards {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.todos-bottom-cards_first {
+    height: $first-card-height;
+    border: 1px solid $c-default-border;
+    background-color: $c-main-content-bg;
+    margin-left: $offset-card-first;
+    margin-right: $offset-card-first;
+}
+
+.todos-bottom-cards_second {
+    height: $second-card-height;
+    border: 1px solid $c-default-border;
+    background-color: $c-main-content-bg;
+    margin-top: $second-card-margin-top;
+    margin-left: $offset-card-second;
+    margin-right: $offset-card-second;
+}

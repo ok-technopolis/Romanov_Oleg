@@ -1,0 +1,66 @@
+@import "../../config/globals";
+
+
+.todo-item {
+    overflow: hidden;
+    border-top: 1px solid $c-default-border;
+    display: flex;
+    padding: $offset_3x;
+}
+
+    .todo-item:hover {
+        background-color: $c-item-hover-bg;
+    }
+
+    .todo-item_text-w {
+        overflow: hidden;
+        padding-left: $offset_2x;
+        padding-right: $offset_2x;
+        margin: 0 2px 0 2px;
+        padding-top: 10px;
+        flex: 1 0;
+    }
+
+        .todo-item_text {
+            overflow: hidden;
+            border: none;
+            resize: none;
+            color: $c-text;
+            outline: none;
+            font-size: $font-size-text;
+            min-height: $text-content-height;
+            background-color: inherit;
+            word-wrap: break-word;
+            align-self: center;
+            word-break: break-all;
+        }
+
+            .todo-item.__ready .todo-item_text {
+                text-decoration: line-through;
+                color: $c-completed-text;
+            }
+
+
+    .todo-item_ready-checker {
+        align-self: center;
+        float: left;
+    }
+
+    .todo-item_remove-action {
+        margin-top: $offset_3x;
+        margin-bottom: $offset_3x;
+        order: 1;
+        float: right;
+        align-self: flex-end;
+    }
+
+        .todo-item_remove-action .action_visual {
+            width: 18px;
+            height: 18px;
+            //position: relative;
+            overflow: hidden;
+        }
+
+                .todo-item:hover .todo-item_remove-action .action_visual {
+                    background: url('../../../images/svg/close.svg') no-repeat center;
+                }

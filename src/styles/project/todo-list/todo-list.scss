@@ -1,0 +1,10 @@
+@import "../../config/vars/colors";
+
+
+.todo-list {
+    //border: 1px solid $c-default-border;
+
+    background-color: $c-main-content-bg;
+    margin: 0 auto -2px;
+    border: 1px solid $c-default-border;
+}
