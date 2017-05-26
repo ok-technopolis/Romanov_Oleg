@@ -14,11 +14,11 @@
 
     .todo-item_text-w {
         overflow: hidden;
-        //width: 100%;
         padding-left: $offset_2x;
         padding-right: $offset_2x;
         margin: 0 2px 0 2px;
         padding-top: 10px;
+        flex: 1 0;
     }
 
         .todo-item_text {
@@ -33,7 +33,6 @@
             word-wrap: break-word;
             align-self: center;
             word-break: break-all;
-            flex: 1 0;
         }
 
             .todo-item.__ready .todo-item_text {

@@ -1,11 +1,12 @@
-@import "../../config/vars/colors";
+@import "../../config/globals";
 
 .filter {
-    border: none;
+    border: 0;
     background-color: $c-filters-background;
     color: $c-text;
     outline: none;
     cursor: pointer;
+    padding: $offset_half $offset_2x;
 }
 
 .filter.__active {

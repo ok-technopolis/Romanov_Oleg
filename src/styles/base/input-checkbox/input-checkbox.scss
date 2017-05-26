@@ -33,7 +33,7 @@ $c-checkbox-active: #5dc2af;
 
         .input-checkbox_target:hover ~ .input-checkbox_visual {
         }
-
+        //todo fix icon as sprite
         .input-checkbox_target:checked ~ .input-checkbox_visual {
             border: 1px solid $c-checkbox-active;
             background: url('../../../images/svg/completed.svg') no-repeat center;
