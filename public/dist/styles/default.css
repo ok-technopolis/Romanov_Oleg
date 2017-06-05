@@ -142,6 +142,10 @@
   padding: 12px;
 }
 
+.todo-item.__hide {
+  display: none;
+}
+
 .todo-item:hover {
   background-color: #fafafa;
 }

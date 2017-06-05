@@ -8,6 +8,10 @@
     padding: $offset_3x;
 }
 
+    .todo-item.__hide {
+        display: none;
+    }
+
     .todo-item:hover {
         background-color: $c-item-hover-bg;
     }
