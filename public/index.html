@@ -6,7 +6,8 @@
 
     <link rel="stylesheet" type="text/css" href="./dist/styles/default.css">
 
-    <script src="./dist/scripts/dummy.js"></script>
+    <script src="dist/scripts/counter.js"></script>
+    <script src="dist/scripts/dummy.js"></script>
 </head>
 <body>
 <div class="todos-header">
@@ -17,45 +18,45 @@
     <div class="todos-add">
         <div class="action todo-add_select-all-action">
             <div class="action_visual"></div>
-            <button class="action_target" aria-label="Отметить все как выполненные"></button>
+            <button class="action_target js-todos-select-all" aria-label="Отметить все как выполненные"></button>
         </div>
 
         <div class="todo-add_input_w">
-            <input class="todo-add_input" placeholder="What needs to be done?"
+            <input class="todo-add_input js-todos-todo-input" placeholder="What needs to be done?"
                    aria-label="Поле добавления todo"/>
         </div>
     </div>
 
-    <div class="todo-list">
-        <div class="todo-item">
-            <div class="input-checkbox todo-item_ready-checker">
-                <input type="checkbox"
-                       class="input-checkbox_target"
-                       aria-label="Пометить как выполненное"/>
-                <div class="input-checkbox_visual"></div>
-            </div>
+    <div class="todo-list js-todos-list">
+        <!--<div class="todo-item">-->
+            <!--<div class="input-checkbox todo-item_ready-checker">-->
+                <!--<input type="checkbox"-->
+                       <!--class="input-checkbox_target"-->
+                       <!--aria-label="Пометить как выполненное"/>-->
+                <!--<div class="input-checkbox_visual"></div>-->
+            <!--</div>-->
 
-            <div class="action todo-item_remove-action">
-                <div class="action_visual"></div>
-                <button class="action_target js-todo-item_remove-action" aria-label="Удалить todo"></button>
-            </div>
+            <!--<div class="action todo-item_remove-action">-->
+                <!--<div class="action_visual"></div>-->
+                <!--<button class="action_target js-todo-item_remove-action" aria-label="Удалить todo"></button>-->
+            <!--</div>-->
 
-            <div class="todo-item_text-w">
-                <div contentEditable="true" class="todo-item_text">HTML</div>
-            </div>
+            <!--<div class="todo-item_text-w">-->
+                <!--<div contentEditable="true" class="todo-item_text">HTML</div>-->
+            <!--</div>-->
 
-        </div>
+        <!--</div>-->
     </div>
     <div class="todos-actions-bar">
-        <div class="todos-actions-bar_counter"
+        <div class="todos-actions-bar_counter js-todos-actions-bar_counter"
              aria-label="Количество не сделанных todo">3 items left
         </div>
 
-        <button class="todos-actions-bar_clear-completed">
+        <button class="todos-actions-bar_clear-completed js-todos-actions-bar_clear-completed">
             Clear completed
         </button>
 
-        <div class="todos-filters">
+        <div class="todos-filters js-todos-actions-bar_filter">
             <button class="filter __active" data-filter="all"
                     aria-label="Фильтр: показать все">
                 All
