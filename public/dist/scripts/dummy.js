@@ -32,11 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         );
 
-        var completeItems = list.querySelectorAll('.js-todo-item_mark-ready');
-        completeItems[completeItems.length - 1].addEventListener(
+        templateResult.completeLink.addEventListener(
             'click',
             function (e) {
-                e.preventDefault();
                 var item = this.closest('.todo-item');
 
                 if (item.className === 'todo-item') {
@@ -93,10 +91,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
             return {
                 root: item,
-                deleteLink: deleteLink
+                deleteLink: deleteLink,
+                completeLink: inputCheckboxWrapper
             };
         }
     };
 
 });
-
