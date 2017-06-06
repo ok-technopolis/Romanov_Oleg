@@ -17,30 +17,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function addItem(text) {
-        list.insertAdjacentHTML(
-            'beforeend',
-            '<div class="todo-item">' +
-            '<div class="input-checkbox todo-item_ready-checker">' +
-            '<input type="checkbox"' +
-            ' class="input-checkbox_target js-todo-item_mark-ready"' +
-            ' aria-label="Пометить как выполненное"/>' +
-            '<div class="input-checkbox_visual"></div>' +
-            '</div>' +
-            '<div class="action todo-item_remove-action">' +
-            '<div class="action_visual"></div>' +
-            '<button class="action_target js-todo-item_remove-action" aria-label="Удалить todo"></button>' +
-            '</div>' +
-            '<div class="todo-item_text-w">' +
-            '<div contentEditable="true" class="todo-item_text">' + text + '</div>' +
-            '</div>' +
-            '</div>');
+        var templateResult = templates.item({
+            text: text
+        });
 
-        var removeItems = list.querySelectorAll('.js-todo-item_remove-action');
-        removeItems[removeItems.length - 1].addEventListener(
+        list.appendChild(templateResult.root);
+
+        templateResult.deleteLink.addEventListener(
             'click',
             function (e) {
                 e.preventDefault();
-                var item = this.closest('.todo-item');
+                var item = templateResult.root;
                 item.parentNode.removeChild(item);
             }
         );
@@ -61,4 +48,55 @@ document.addEventListener('DOMContentLoaded', function () {
         );
     }
 
+    var templates = {
+        item: function (data) {
+            var item = document.createElement('div');
+            item.className = 'todo-item';
+
+            var inputCheckboxWrapper = document.createElement('div');
+            inputCheckboxWrapper.className = 'input-checkbox todo-item_ready-checker';
+
+            var checkbox = document.createElement('input');
+            checkbox.type = "checkbox";
+            checkbox.className = "input-checkbox_target";
+
+            var checkboxVisual = document.createElement('div');
+            checkboxVisual.className = 'input-checkbox_visual';
+
+            inputCheckboxWrapper.appendChild(checkbox);
+            inputCheckboxWrapper.appendChild(checkboxVisual);
+            item.appendChild(inputCheckboxWrapper);
+
+            var removeWrapper = document.createElement('div');
+            removeWrapper.className = 'action todo-item_remove-action';
+
+            var actionVisual = document.createElement('div');
+            actionVisual.className = 'action_visual';
+
+            var deleteLink = document.createElement('button');
+            deleteLink.className = 'action_target js-todo-item_remove-action';
+
+            removeWrapper.appendChild(actionVisual);
+            removeWrapper.appendChild(deleteLink);
+            item.appendChild(removeWrapper);
+
+            var textWrapper = document.createElement('div');
+            textWrapper.className = 'todo-item_text-w';
+
+            var text = document.createElement('div');
+            text.className = 'todo-item_text';
+            text.contentEditable = true;
+            text.appendChild(document.createTextNode(data.text || ''));
+
+            textWrapper.appendChild(text);
+            item.appendChild(textWrapper);
+
+            return {
+                root: item,
+                deleteLink: deleteLink
+            };
+        }
+    };
+
 });
+
