@@ -1,3 +1,7 @@
-/**
- * Created by olerom on 22.07.17.
- */
+(function () {
+    window.TODO_APP = {
+        utils: {},
+        modules: {},
+        components: {}
+    };
+}());

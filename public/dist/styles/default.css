@@ -88,6 +88,10 @@
   margin-top: -6px;
 }
 
+.todo-add_select-all-action .action_visual .__hide {
+  display: none;
+}
+
 .todo-add_select-all-action .action_visual:before,
 .todo-add_select-all-action .action_visual:after {
   content: '';
