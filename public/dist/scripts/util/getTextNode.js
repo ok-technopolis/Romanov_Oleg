@@ -4,13 +4,13 @@
      * @return {Node}
      */
     function getTextNode(node) {
-        let childs = node.childNodes;
-        let i = 0;
-         let l = childs.length;
+        let children = node.childNodes;
 
-        for (; i !== l; i += 1) {
-            if (childs[i].nodeName === '#text') {
-                return childs[i];
+        let l = children.length;
+
+        for (let i = 0; i !== l; i += 1) {
+            if (children[i].nodeName === '#text') {
+                return children[i];
             }
         }
 

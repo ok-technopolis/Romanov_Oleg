@@ -1,6 +1,5 @@
 (function () {
 
-
     let TodoMain = TODO_APP.components.TodoMain;
     let AddTodos = TODO_APP.components.AddTodos;
     let TodoList = TODO_APP.components.TodoList;

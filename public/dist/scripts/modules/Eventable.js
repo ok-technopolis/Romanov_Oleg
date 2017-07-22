@@ -1,6 +1,6 @@
 (function () {
 
-    /*
+    /**
      * @constructor
      */
     function EventableConstructor() {
