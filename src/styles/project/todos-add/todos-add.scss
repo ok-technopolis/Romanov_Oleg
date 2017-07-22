@@ -24,6 +24,12 @@ $todos-add-height: 64px;
         margin-top: -6px;
     }
 
+    .__hide .todo-add_select-all-action .action_visual {
+        visibility: hidden;
+
+        transition: top 1s ease-out 0.5s;
+    }
+
         .todo-add_select-all-action .action_visual:before,
         .todo-add_select-all-action .action_visual:after {
             content: '';

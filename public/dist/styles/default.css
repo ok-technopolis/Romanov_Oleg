@@ -88,6 +88,11 @@
   margin-top: -6px;
 }
 
+.__hide .todo-add_select-all-action .action_visual {
+  visibility: hidden;
+  transition: top 1s ease-out 0.5s;
+}
+
 .todo-add_select-all-action .action_visual:before,
 .todo-add_select-all-action .action_visual:after {
   content: '';
@@ -142,6 +147,10 @@
   padding: 12px;
 }
 
+.todo-item.__hide {
+  display: none;
+}
+
 .todo-item:hover {
   background-color: #fafafa;
 }
@@ -172,6 +181,7 @@
 .todo-item.__ready .todo-item_text {
   text-decoration: line-through;
   color: #cfcfcf;
+  transition: top 1s ease-out 0.5s;
 }
 
 .todo-item_ready-checker {
