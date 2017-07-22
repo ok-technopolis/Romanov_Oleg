@@ -88,8 +88,9 @@
   margin-top: -6px;
 }
 
-.todo-add_select-all-action .action_visual .__hide {
-  display: none;
+.__hide .todo-add_select-all-action .action_visual {
+  visibility: hidden;
+  transition: top 1s ease-out 0.5s;
 }
 
 .todo-add_select-all-action .action_visual:before,
@@ -180,6 +181,7 @@
 .todo-item.__ready .todo-item_text {
   text-decoration: line-through;
   color: #cfcfcf;
+  transition: top 1s ease-out 0.5s;
 }
 
 .todo-item_ready-checker {

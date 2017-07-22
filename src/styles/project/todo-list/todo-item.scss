@@ -42,6 +42,9 @@
             .todo-item.__ready .todo-item_text {
                 text-decoration: line-through;
                 color: $c-completed-text;
+
+
+                transition: top 1s ease-out 0.5s;
             }
 
 

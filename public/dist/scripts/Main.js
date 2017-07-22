@@ -30,6 +30,8 @@
 
             if (itemsCount !== 0) {
                 todoMain.showFullInterface();
+            } else {
+                todoMain.hideFullInterface();
             }
 
             todoActionsBar.setItemsCount(itemsCount);
